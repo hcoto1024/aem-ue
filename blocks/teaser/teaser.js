@@ -12,12 +12,12 @@ function getOptions(block) {
 }
 
 /**
-  * Adds a zoom effect to image using event listeners.
-  *
-  * When the CTA button is hovered over, the image zooms in.
-  *
-  * @param {HTMLElement} block represents the block's' DOM tree
-  */
+* Adds a zoom effect to image using event listeners.
+*
+* When the CTA button is hovered over, the image zooms in.
+*
+* @param {HTMLElement} block represents the block's' DOM tree
+*/
 function addEventListeners(block) {
   block.querySelector('.button').addEventListener('mouseover', () => {
     block.querySelector('.image').classList.add('zoom');
@@ -29,14 +29,14 @@ function addEventListeners(block) {
 }
 
 /**
-   * Entry point to block's JavaScript.
-   * Must be exported as default and accept a block's DOM element.
-   * This function is called by the project's style.js, and passed the block's element.
-   *
-   * @param {HTMLElement} block represents the block's' DOM element/tree
-   */
+ * Entry point to block's JavaScript.
+ * Must be exported as default and accept a block's DOM element.
+ * This function is called by the project's style.js, and passed the block's element.
+ *
+ * @param {HTMLElement} block represents the block's' DOM element/tree
+ */
 export default function decorate(block) {
-  /* This JavaScript makes minor adjustments to the block's DOM */
+/* This JavaScript makes minor adjustments to the block's DOM */
 
   /* Common treatments for all options */
   block.querySelector(':scope > div:last-child').classList.add('content');
